@@ -1,0 +1,121 @@
+@font-face {
+    font-family: Lato-Bold;
+    src:url("../assets/Lato-Bold.ttf") format('truetype');
+}
+
+* {
+    font-family: Lato-Bold;
+    color: white;
+
+}
+
+body {
+    background-image: url("../assets/background.webp");
+    background-size: cover;
+}
+
+img {
+    height: 50px;
+}
+
+h1 {
+    align-content: center;
+    text-align-last: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#spacePhoto {
+    height: auto;
+    max-height: 500px;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    border: solid white 5px;
+    border-radius: 5px;
+}
+
+#stickerBar img { 
+    border: solid white 3px;
+    margin: 4px;
+    transition: scale 300ms;
+    padding: 1px;
+}
+
+#stickerBar img:hover {
+    background: rgb(249, 233, 255);
+    scale: 1.2;
+}
+
+
+.selectedImage {
+    opacity: 0.7;
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+    scale: 2;
+}
+
+
+input {
+    align-items: center;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);    padding: 16px 24px;
+    border-radius: 6px;
+    border: 0;
+}
+
+
+/*
+button CSS taken from https://getcssscan.com/css-buttons-examples, button-64
+*/
+
+button {
+    align-items: center;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    font-size: 20px;
+    justify-content: center;
+    display: inline-flex;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    margin: 3px;
+}
+
+button:active, button:hover {
+    outline: 0;
+}
+
+
+button span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+  
+button:hover span {
+    background: none;
+}
+  
+@media (min-width: 768px) {
+    button {
+        font-size: 24px;
+        min-width: 196px;
+    }
+    input {
+        font-size: 24px;
+        min-width: 196px;
+    }
+}
